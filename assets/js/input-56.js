@@ -49,7 +49,7 @@
             }
             if (css.url) {
                 fetchSvg(css.url, css.id, css.text);
-                return $('<span class="acf_svg__span" data-id="' + css.id + '">' + css.text + '</span>');
+                return $('<span class="acf_svg__span" data-id="' + css.id + '">' + css.text + '</span>').html();
             } else {
                 return $('<span class="acf_svg__span"><svg class="acf_svg__icon small icon ' + css.id + '" aria-hidden="true" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#' + css.id + '"></use></svg>' + css.text + '</span>');
             }
